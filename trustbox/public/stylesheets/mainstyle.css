@@ -1,8 +1,78 @@
+/* pallete
+white:      #FFFFFF;
+lightgray:  #CCCCCC;
+darkgray:   #333333;
+black:      #000000;
+gold:       #FFD700;
+*/
+
+/*  transition element
+      all ease 0.7s
+*/
+
 body {
   padding: 50px;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  background-color: #333333 !important;
+  margin: 0;
+  padding: 0;
 }
 
 a {
   color: #00B7FF;
+}
+
+/*  MainLayout navbar section  */
+#nav{
+  display: flex;
+  flex-direction: row;
+  margin: 0px;
+  background-color: #000000;
+  color: #CCCCCC;
+  width: 100%;
+  border-bottom: 3px solid #CCCCCC;
+  border-right: 3px solid #CCCCCC;
+  border-bottom-right-radius: 25px;
+}
+#nav h3{
+  cursor: default;
+}
+#navlink{
+  margin-left: 10px;
+  margin-top: 5px;
+  display: flex;
+  flex-direction: row;
+}
+#navlink h4{
+  margin-left: 25px;
+  cursor: pointer;
+  transition: all ease 0.7s;
+}
+#navlink h4:hover{
+  color: #FFD700;
+}
+.linknavselected{
+  border-bottom: 3px solid #FFD700;
+  color: #FFD700;
+}
+
+/*  MainLayout footer section  */
+#footer{
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  background-color: #000000;
+  color: #FFFFFF;
+  border-top: 3px solid #CCCCCC;
+  border-left: 3px solid #CCCCCC;
+  border-top-left-radius: 25px;
+}
+#footer p{
+  color: #FFD700;
+}
+
+/*  FILL SECTION INDEX.pug  */
+#fill{
+  width: 100%;
+  height: 100%;
 }
