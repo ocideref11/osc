@@ -1,4 +1,46 @@
 extends layout
 
 block content
-  h1 INDEX.PUG
+  div.maincontent.container-fluid
+    h1(style="border-bottom: 1px #442D3D; border") HOME
+
+    div.cardcontainer.container-fluid
+      div#card1.card
+        div.card-header
+          | Primo Piano
+        div.card-body
+          h5.card-title Cosa facciamo?
+          p.card-text Agiamo su tutto il territorio italiano, offriamo servizi di risposta sismica come:
+          ul#listCard1
+            li Misurazioni
+            li Prove anti-sismiche
+            li Prove di integrità strutturale
+            li Perforazioni
+          a#btnContact.btn.btn-primary(href='#contatti') Contattaci
+
+      div.affiancate
+        div.row.row-cols-1.row-cols-md-3.g-4
+          div.col
+            div#card2.card.h-100
+              img.card-img-top(src='/images/safety_helmet.png' width="50" height="250" alt='img.png')
+              div.card-body
+                h5.card-title Sicurezza
+                p.card-text Ogni nostro servizio garantisce sicurezza su ogni azione svolta sul campo di lavoro e nelle analisi dei dati nel nostro studio.
+              div.card-footer(style="color: white !important;")
+                span.smallText.text-body-secondary L'importanza della sicurezza
+          div.col
+            div#card3.card.h-100
+              img.card-img-top(src='/images/team_money.png' width="50" height="250" alt='img.png')
+              div.card-body
+                h5.card-title Team
+                p.card-text Abbiamo un team di esperti a vostra disposizione per effettuare un lavoro eccellente a prezzi eccellenti.
+              div.card-footer
+                span.smallText.text-body-secondary L'importanza della Professionalità
+          div.col
+            div#card4.card.h-100
+              img.card-img-top(src='/images/professionality_precision.png' width="50" height="250" alt='img.png')
+              div.card-body
+                h5.card-title Professionalità e Precisione
+                p.card-text Stiamo attenti ad essere professionali per garantire al cliente un lavoro di ottima qualità, e per non deludervi.
+              div.card-footer
+                span.smallText.text-body-secondary L'importanza del risparmio
