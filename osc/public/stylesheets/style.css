@@ -74,7 +74,7 @@ a {
   margin: 10px  auto;
   text-align: center;
   width: 50%;
-  cursor: pointer;
+  cursor: crosshair;
   transition: all ease 0.5s;
 }
 .card:hover{
@@ -90,7 +90,7 @@ a {
   color: white !important;
   transition: all ease 0.5s;
 }
-#BtnCardSection:hover{
+.BtnCardSection:hover{
   color: white !important;
   background-color: #99171F !important;
   border: 1px solid #FF3C7C !important;
@@ -124,12 +124,14 @@ a {
   border: 1px solid white;
   height: auto;
   transition: all ease 0.5s;
+  cursor: crosshair;
 }
 .sections a{
   text-decoration: none;
 }
 .sections:hover{
   border: 5px solid white;
+  border-radius: 15px;
   padding: 10px;
 }
 .sections h6{
@@ -148,10 +150,10 @@ a {
   width: auto;
 }
 .sections-lateral:hover{
-  background-color: rgba(206, 125, 78, 50%);
+  background-color: rgba(206, 125, 78, 25%);
   color: white;
 }
-.sections-lateral:hover h3{
+.sections-lateral:hover h3, a{
   border-bottom-color: white;
 }
 
@@ -168,7 +170,7 @@ a {
   width: auto;
 }
 .sections-central:hover{
-  background-color: rgba(52, 99, 189, 50%);
+  background-color: rgba(52, 99, 189, 25%);
   color: white;
 }
 .sections-central:hover h3, a {
