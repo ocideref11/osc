@@ -4,8 +4,9 @@ body {
   padding: 0px;
   text-align: center;
   background-image: url('../images/bg.jpg');
-  background-size: cover;
+  background-size:auto;
   background-repeat: no-repeat;
+  background-color: #442D3D !important;
 }
 
 a {
@@ -29,9 +30,15 @@ a {
   border-left: 2px solid #FF3C7C;
   border-bottom-left-radius: 15px;
   border-bottom-right-radius: 25px;
-
 }
 .liSelect{  /*  simple class for selected page (li in ul in navbar)  */
+  color: #FF3C7C;
+}
+#navbar a{
+  text-decoration: none;
+  color: #99171F;
+}
+#navbar a:hover{
   color: #FF3C7C;
 }
 #footer{
@@ -44,6 +51,7 @@ a {
   color: #FF3C7C;
   text-decoration: none;
   transition: all ease 0.5s;
+  border: none;
 }
 #footerMapsLink:hover{
   text-decoration: underline;
@@ -63,7 +71,7 @@ a {
   background-color: #442D3D !important;
   color: white !important;
   border: 3px solid #99171F !important;
-  margin: 50px auto;
+  margin: 10px  auto;
   text-align: center;
   width: 50%;
   cursor: pointer;
@@ -76,13 +84,13 @@ a {
 .card span{
   color: white !important;
 }
-#btnContact{
+.BtnCardSection{
   background-color: #442D3D !important;
   border: 1px solid #99171F !important;
   color: white !important;
   transition: all ease 0.5s;
 }
-#btnContact:hover{
+#BtnCardSection:hover{
   color: white !important;
   background-color: #99171F !important;
   border: 1px solid #FF3C7C !important;
@@ -97,3 +105,73 @@ a {
 .col{
   margin-bottom: 100px;
 }
+ /*  index.pug, bg1 (second background-image, second part of home [Il Nostro Team])  */
+.body1-bg1 {
+  margin: 0px;
+  padding: 0px;
+  text-align: center;
+  background-image: url('../images/bg1.jpg');
+  background-size: auto;
+  background-repeat: no-repeat;
+  color: white;
+  background-color: black;
+}
+.teamSections{
+  display: flex;
+}
+.sections{
+  padding: 20px;
+  border: 1px solid white;
+  height: auto;
+  transition: all ease 0.5s;
+}
+.sections a{
+  text-decoration: none;
+}
+.sections:hover{
+  border: 5px solid white;
+  padding: 10px;
+}
+.sections h6{
+  margin-top: 15px;
+}
+
+.sections-lateral{
+  background-color: #CE7D4E;
+  color: #3463BD;
+}
+.sections-lateral a{
+  color: #3463BD;
+}
+.sections-lateral h3, a{
+  border-bottom: 2px solid #3463BD;
+  width: auto;
+}
+.sections-lateral:hover{
+  background-color: rgba(206, 125, 78, 50%);
+  color: white;
+}
+.sections-lateral:hover h3{
+  border-bottom-color: white;
+}
+
+
+.sections-central{
+  background-color: #3463BD;
+  color: #CE7D4E;
+}
+.sections-central a{
+  color: #CE7D4E;
+}
+.sections-central h3, a{
+  border-bottom: 2px solid #CE7D4E;
+  width: auto;
+}
+.sections-central:hover{
+  background-color: rgba(52, 99, 189, 50%);
+  color: white;
+}
+.sections-central:hover h3, a {
+  border-bottom-color: white;
+}
+
