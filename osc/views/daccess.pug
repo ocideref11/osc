@@ -1,0 +1,22 @@
+extends dlayout
+
+block content
+    div#MainPage.container-fluid
+        div.row.align-items-center.justify-content-center.full-height
+            div.col-md-6
+                form#loginForm
+                div.form-floating.mb-3
+                    input.form-control(type='email', id='floatingInputEmail', placeholder='name@example.com')
+                    label(for='floatingInputEmail') Email address
+
+                div.form-floating.mb-3
+                    input.form-control(type='text', id='floatingInputUsername', placeholder='Username')
+                    label(for='floatingInputUsername') Username
+
+                div.form-floating
+                    input.form-control(type='password', id='floatingPassword', placeholder='Password')
+                    label(for='floatingPassword') Password
+
+                div#loginFormBTNS
+                    button#backDBTN.btn.btn-danger Indietro
+                    button#loginDBTN.btn.btn-success Accedi
